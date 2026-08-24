@@ -6,6 +6,7 @@ using namespace std;
 #include<stack>
 #include<queue>
 #include<map>
+#include<set>
 
 
 int main(){
@@ -137,6 +138,21 @@ int main(){
     while(!pq1.empty()){
         cout<<pq1.top()<<" ";
         pq1.pop();
+    }
+
+
+    set<int>s1;
+    
+    s1.insert(1);
+    s1.insert(2);
+    s1.insert(3);
+    // s.insert(4);
+    s1.insert(5);
+    
+    cout<<"lower bound :- "<<*(s1.lower_bound(4))<<endl;
+    cout<<"Upper bound :- "<<*(s1.upper_bound(4))<<endl;
+    for(int i :s1){
+        cout<<i<<" ";
     }
     
 }
