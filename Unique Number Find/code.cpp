@@ -25,4 +25,4 @@ int main(){
     vector<int> arr = {1,1,1,2,2,3};
     int result = uniqueFind(arr);
     cout<<"unique result :- "<<result;
-}git add .
+}
